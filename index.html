@@ -5,13 +5,13 @@
     <title>Animation</title>
 </head>
 <body>
-    <img src="frame_0.png" id="animation" />
+    <img src="animation.gif" id="animation" />
     <script>
         let currentFrame = 0;
         const totalFrames = 12; // Total number of frames
 
         function animate() {
-            document.getElementById('animation').src = `frame_${currentFrame}.png`;
+            document.getElementById('animation').src = 'animation.gif';
             currentFrame = (currentFrame + 1) % totalFrames;
         }
 
