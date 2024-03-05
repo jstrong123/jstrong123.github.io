@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<body>
+    <img src="frame_0.png" id="animation" />
+    <script>
+        let currentFrame = 0;
+        const totalFrames = 12; // Total number of frames
+
+        function animate() {
+            document.getElementById('animation').src = `frame_${currentFrame}.png`;
+            currentFrame = (currentFrame + 1) % totalFrames;
+        }
+
+        setInterval(animate, 250); // Change frame every 250 milliseconds
+    </script>
+</body>
+</html>
