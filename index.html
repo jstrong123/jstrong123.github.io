@@ -6,17 +6,7 @@
     <title>Animation</title>
 </head>
 <body>
+    <h2>Animated Plots</h2>
     <img src="animation.gif" id="animation" >
-    <script>
-        let currentFrame = 0;
-        const totalFrames = 12; // Total number of frames
-
-        function animate() {
-            document.getElementById('animation').src = 'animation.gif';
-            currentFrame = (currentFrame + 1) % totalFrames;
-        }
-
-        setInterval(animate, 250); // Change frame every 250 milliseconds
-    </script>
 </body>
 </html>
